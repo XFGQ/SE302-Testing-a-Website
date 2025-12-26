@@ -94,6 +94,14 @@ npx playwright test tests/Homework02.spec.ts
 npx playwright test -g "Should login successfully"
 ```
 
+- Run tests with a simple web UI:
+
+```bash
+npx playwright test --ui
+```
+
+This opens a small web page in your browser. You can see the list of tests, run tests by clicking, and see results there. Run this in the project folder. Make sure browsers are installed first with `npx playwright install`.
+
 ---
 
 ## 📊 View reports & traces
