@@ -132,6 +132,16 @@ For exact test names, see `tests/Homework02.spec.ts` and historical runs in `tes
 npx playwright install-deps
 ```
 
+- Windows PowerShell: If `npm install` fails with an execution policy error, open PowerShell as **Administrator** and run:
+
+```powershell
+Set-ExecutionPolicy RemoteSigned
+```
+
+Then type `y` to confirm. Otherwise, some `npm` commands may not run correctly.
+
+- Note (Türkçe): Eğer `npm install` sırasında hata alırsanız, PowerShell'i **yönetici** olarak açıp `Set-ExecutionPolicy RemoteSigned` komutunu çalıştırıp `y` ile onaylamanız gerekir. Ayrıca bilgisayarınızda **Node.js** kurulu olmalıdır.
+
 - Use `--headed` to observe actions during debugging.
 - Increase timeouts in `playwright.config.ts` for slow environments.
 - Re-run flaky tests and inspect traces in `test-results/` to identify flakiness.
